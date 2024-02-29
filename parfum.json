@@ -1,0 +1,362 @@
+[
+    {
+        "id": 1,
+        "name": "Creed Aventus",
+        "description": "A legendary and masculine fragrance with a blend of fruity and woody notes.",
+        "age": 11,
+        "has_website": true,
+        "releasedate": "2010-03-01",
+        "profile_image_url": "https://raw.githubusercontent.com/OussamaOusi/TerminalApp/main/Afbeeldingen/Aventus.webp",
+        "category": "legendary",
+        "price": 300,
+        "season": [
+            "all round"
+        ],
+        "related_object": {
+            "id": 216,
+            "type": "fragrance_info",
+            "details": {
+                "top_notes": [
+                    "blackcurrant",
+                    "bergamot",
+                    "apple",
+                    "pineapple"
+                ],
+                "middle_notes": [
+                    "jasmine",
+                    "rose",
+                    "patchouli",
+                    "birch"
+                ],
+                "base_notes": [
+                    "vanilla",
+                    "ambergris",
+                    "oakmoss",
+                    "musks"
+                ]
+            }
+        }
+    },
+    {
+        "id": 2,
+        "name": "Jean Paul Gaultier Le Male Le Parfum",
+        "description": "A sophisticated and intense fragrance with a blend of cardamom and vanilla.",
+        "age": 2,
+        "has_website": true,
+        "releasedate": "2022-03-01",
+        "profile_image_url": "https://raw.githubusercontent.com/OussamaOusi/TerminalApp/main/Afbeeldingen/Jean-Paul-Gaultier-Le-Male-Le-Parfum-93467_10.webp",
+        "category": "sophisticated",
+        "price": 116.50,
+        "season": [
+            "fall",
+            "winter"
+        ],
+        "related_object": {
+            "id": 215,
+            "type": "fragrance_info",
+            "details": {
+                "top_notes": [
+                    "cardamom",
+                    "lavender",
+                    "bergamot"
+                ],
+                "middle_notes": [
+                    "iris",
+                    "pear",
+                    "orange blossom"
+                ],
+                "base_notes": [
+                    "vanilla",
+                    "vetiver",
+                    "woods"
+                ]
+            }
+        }
+    },
+      {
+        "id": 3,
+        "name": "Giorgio Armani Code",
+        "description": "A seductive and elegant fragrance with a blend of citrus and spices.",
+        "age": 16,
+        "has_website": true,
+        "releasedate": "2004-04-01",
+        "profile_image_url": "https://raw.githubusercontent.com/OussamaOusi/TerminalApp/main/Afbeeldingen/Armani%20code.webp",
+        "category": "seductive",
+        "price": 105,
+        "season": [
+            "fall",
+            "winter",
+            "spring"
+        ],
+        "related_object": {
+            "id": 209,
+            "type": "fragrance_info",
+            "details": {
+                "top_notes": [
+                    "bergamot",
+                    "lemon"
+                ],
+                "middle_notes": [
+                    "star anise",
+                    "olive blossom",
+                    "guaiac wood"
+                ],
+                "base_notes": [
+                    "leather",
+                    "tobacco",
+                    "tonka bean"
+                ]
+            }
+        }
+    },
+    {
+        "id": 4,
+        "name": "Prada Luna Rossa Carbon",
+        "description": "An intense and modern fragrance with fresh and metallic accords.",
+        "age": 4,
+        "has_website": true,
+        "releasedate": "2020-01-01",
+        "profile_image_url": "https://raw.githubusercontent.com/OussamaOusi/TerminalApp/main/Afbeeldingen/prada-luna-rossa-carbon-eau-de-toilette-pour-homme___15.webp",
+        "category": "intense",
+        "price": 111.90,
+        "season": [
+            "spring",
+            "summer"
+        ],
+        "related_object": {
+            "id": 210,
+            "type": "fragrance_info",
+            "details": {
+                "top_notes": [
+                    "metallic notes",
+                    "lavender"
+                ],
+                "middle_notes": [
+                    "green notes",
+                    "coal",
+                    "powder notes"
+                ],
+                "base_notes": [
+                    "ambroxan",
+                    "patchouli",
+                    "woody notes"
+                ]
+            }
+        }
+    },
+    {
+        "id": 5,
+        "name": "Tom Ford Noir Extreme",
+        "description": "An intense and spicy fragrance with warm and exotic accords.",
+        "age": 6,
+        "has_website": true,
+        "releasedate": "2015-09-01",
+        "profile_image_url": "https://raw.githubusercontent.com/OussamaOusi/TerminalApp/main/Afbeeldingen/1602160-Tom-Ford-Noir-Extreme-Eau-de-Parfum-100-ml.d95e6ed7.jpg",
+        "category": "spicy",
+        "price": 250,
+        "season": [
+            "fall",
+            "winter"
+        ],
+        "related_object": {
+            "id": 207,
+            "type": "fragrance_info",
+            "details": {
+                "top_notes": [
+                    "mandarin",
+                    "neroli",
+                    "saffron",
+                    "cardamom"
+                ],
+                "middle_notes": [
+                    "rose absolute",
+                    "jasmine",
+                    "orange blossom",
+                    "mastic"
+                ],
+                "base_notes": [
+                    "amber",
+                    "sandalwood",
+                    "vanilla",
+                    "oud"
+                ]
+            }
+        }
+    },
+    {
+        "id": 6,
+        "name": "Yves Saint Laurent La Nuit de L'Homme",
+        "description": "A sensual and magnetic fragrance with a blend of spicy and woody notes.",
+        "age": 12,
+        "has_website": true,
+        "releasedate": "2009-05-01",
+        "profile_image_url": "https://raw.githubusercontent.com/OussamaOusi/TerminalApp/main/Afbeeldingen/ysl%20la%20nuit.webp",
+        "category": "sensual",
+        "price": 114.50,
+        "season": [
+            "fall",
+            "winter"
+        ],
+        "related_object": {
+            "id": 208,
+            "type": "fragrance_info",
+            "details": {
+                "top_notes": [
+                    "cardamom",
+                    "bergamot",
+                    "lavender"
+                ],
+                "middle_notes": [
+                    "cedar",
+                    "vetiver",
+                    "caraway"
+                ],
+                "base_notes": [
+                    "amber",
+                    "coumarin",
+                    "patchouli"
+                ]
+            }
+        }
+    },
+    {
+        "id": 7,
+        "name": "Bvlgari Man in Black",
+        "description": "A sensual and sophisticated fragrance with spicy and woody accords.",
+        "age": 7,
+        "has_website": true,
+        "releasedate": "2014-09-01",
+        "profile_image_url": "https://raw.githubusercontent.com/OussamaOusi/TerminalApp/main/Afbeeldingen/man%20in%20black.jpg",
+        "category": "spicy",
+        "price": 113,
+        "season": [
+            "fall",
+            "winter"
+        ],
+        "related_object": {
+            "id": 205,
+            "type": "fragrance_info",
+            "details": {
+                "top_notes": [
+                    "spices",
+                    "rum"
+                ],
+                "middle_notes": [
+                    "leather",
+                    "tuberose"
+                ],
+                "base_notes": [
+                    "tonka bean",
+                    "guaiac wood",
+                    "benzoin"
+                ]
+            }
+        }
+    },
+    {
+        "id": 8,
+        "name": "Paco Rabanne 1 Million",
+        "description": "A bold and irresistible fragrance with a blend of fresh and spicy notes.",
+        "age": 13,
+        "has_website": true,
+        "releasedate": "2008-07-01",
+        "profile_image_url": "https://raw.githubusercontent.com/OussamaOusi/TerminalApp/main/Afbeeldingen/1million.webp",
+        "category": "bold",
+        "price": 105.90,
+        "season": [
+            "fall",
+            "winter"
+        ],
+        "related_object": {
+            "id": 206,
+            "type": "fragrance_info",
+            "details": {
+                "top_notes": [
+                    "blood mandarin",
+                    "peppermint"
+                ],
+                "middle_notes": [
+                    "rose absolute",
+                    "cinnamon"
+                ],
+                "base_notes": [
+                    "leather",
+                    "amber",
+                    "patchouli"
+                ]
+            }
+        }
+    },
+    {
+        "id": 9,
+        "name": "Acqua di Giò by Giorgio Armani",
+        "description": "A classic aquatic fragrance with a blend of marine and woody notes.",
+        "age": 25,
+        "has_website": true,
+        "releasedate": "1996-03-01",
+        "profile_image_url": "https://raw.githubusercontent.com/OussamaOusi/TerminalApp/main/Afbeeldingen/acqua%20di%20gio.webp",
+        "category": "aquatic",
+        "price": 85,
+        "season": [
+            "all round"
+        ],
+        "related_object": {
+            "id": 203,
+            "type": "fragrance_info",
+            "details": {
+                "top_notes": [
+                    "bergamot",
+                    "neroli",
+                    "green tangerine"
+                ],
+                "middle_notes": [
+                    "jasmine",
+                    "sea notes",
+                    "rock rose"
+                ],
+                "base_notes": [
+                    "cedar",
+                    "patchouli",
+                    "white musk",
+                    "amber"
+                ]
+            }
+        }
+    },
+    {
+        "id": 10,
+        "name": "Versace Eros",
+        "description": "An intense and vibrant fragrance with a blend of fresh and aromatic notes.",
+        "age": 8,
+        "has_website": true,
+        "releasedate": "2012-01-01",
+        "profile_image_url": "https://raw.githubusercontent.com/OussamaOusi/TerminalApp/main/Afbeeldingen/versace%20eros.jpg",
+        "category": "intense",
+        "price": 90,
+        "season": [
+            "all round"
+        ],
+        "related_object": {
+            "id": 204,
+            "type": "fragrance_info",
+            "details": {
+                "top_notes": [
+                    "mint",
+                    "green apple",
+                    "lemon"
+                ],
+                "middle_notes": [
+                    "tonka bean",
+                    "ambroxan",
+                    "geranium"
+                ],
+                "base_notes": [
+                    "vanilla",
+                    "vetiver",
+                    "oakmoss",
+                    "cedar"
+                ]
+            }
+        }
+    }
+]
