@@ -14,7 +14,6 @@
         ],
         "related_object": {
             "id": 216,
-            "type": "fragrance_info",
             "details": {
                 "top_notes": [
                     "blackcurrant",
@@ -53,7 +52,6 @@
         ],
         "related_object": {
             "id": 215,
-            "type": "fragrance_info",
             "details": {
                 "top_notes": [
                     "cardamom",
@@ -73,7 +71,7 @@
             }
         }
     },
-      {
+    {
         "id": 3,
         "name": "Giorgio Armani Code",
         "description": "A seductive and elegant fragrance with a blend of citrus and spices.",
@@ -90,7 +88,6 @@
         ],
         "related_object": {
             "id": 209,
-            "type": "fragrance_info",
             "details": {
                 "top_notes": [
                     "bergamot",
@@ -125,7 +122,6 @@
         ],
         "related_object": {
             "id": 210,
-            "type": "fragrance_info",
             "details": {
                 "top_notes": [
                     "metallic notes",
@@ -160,7 +156,6 @@
         ],
         "related_object": {
             "id": 207,
-            "type": "fragrance_info",
             "details": {
                 "top_notes": [
                     "mandarin",
@@ -199,7 +194,6 @@
         ],
         "related_object": {
             "id": 208,
-            "type": "fragrance_info",
             "details": {
                 "top_notes": [
                     "cardamom",
@@ -235,7 +229,6 @@
         ],
         "related_object": {
             "id": 205,
-            "type": "fragrance_info",
             "details": {
                 "top_notes": [
                     "spices",
@@ -269,7 +262,6 @@
         ],
         "related_object": {
             "id": 206,
-            "type": "fragrance_info",
             "details": {
                 "top_notes": [
                     "blood mandarin",
@@ -302,7 +294,6 @@
         ],
         "related_object": {
             "id": 203,
-            "type": "fragrance_info",
             "details": {
                 "top_notes": [
                     "bergamot",
@@ -338,7 +329,6 @@
         ],
         "related_object": {
             "id": 204,
-            "type": "fragrance_info",
             "details": {
                 "top_notes": [
                     "mint",
