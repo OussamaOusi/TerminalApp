@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfume Detail</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <div id="perfumeDetail">
+        <h2>Perfume Detail</h2>
+        <div id="perfumeInfo">
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const params = new URLSearchParams(window.location.search);
+            const perfumeId = params.get('id');
+
+            const perfume = fragrances.find(fragrance => fragrance.id.toString() === perfumeId);
+
+            if (perfume) {
+                const perfumeInfo = document.getElementById('perfumeInfo');
+                perfumeInfo.innerHTML = `
+            <img src="${perfume.profile_image_url}" alt="${perfume.name}">
+            <p><strong>Name:</strong> ${perfume.name}</p>
+            <p><strong>Description:</strong> ${perfume.description}</p>
+            <p><strong>Age:</strong> ${perfume.age}</p>
+            <p><strong>Release Date:</strong> ${perfume.releasedate}</p>
+            <p><strong>Category:</strong> ${perfume.category}</p>
+            <p><strong>Price:</strong> ${perfume.price}</p>
+            <p><strong>Season:</strong> ${perfume.season.join(', ')}</p>
+        `;
+            } else {
+                const perfumeInfo = document.getElementById('perfumeInfo');
+                perfumeInfo.innerHTML = `<p>Perfume not found.</p>`;
+            }
+        });
+
+    </script>
+</body>
+
+</html>
