@@ -4,6 +4,25 @@ import{
     Fragrances
 } from "./interfaces"
 
+const { MongoClient } = require('mongodb');
+
+const uri = 'mongodb://localhost:27017';
+const dbName = 'mongo-cluster-oussama';
+
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+
+async function connectDB() {
+    try {
+        await client.connect();
+        console.log('Connected to MongoDB');
+        return client.db(dbName);
+    } catch (error) {
+        console.error('Error connecting to MongoDB:', error);
+        throw error;
+    }
+}
+
+module.exports = connectDB;
 
 const app = express();
 
