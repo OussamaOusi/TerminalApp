@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Fragrance</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Edit Fragrance</h1>
+        <form action="/edit/<%= fragrance._id %>" method="POST">
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea id="description" name="description" required><%= fragrance.description %></textarea>
+            </div>
+            <div class="form-group">
+                <label for="category">Category</label>
+                <input type="text" id="category" name="category" value="<%= fragrance.category %>" required>
+            </div>
+            <div class="form-group">
+                <label for="price">Price</label>
+                <input type="number" step="0.01" id="price" name="price" value="<%= fragrance.price %>" required>
+            </div>
+            <div class="form-group">
+                <label for="season">Season (comma separated)</label>
+                <input type="text" id="season" name="season" value="<%= fragrance.season.join(",") %>" required>
+            </div>
+            <button type="submit">Save Changes</button>
+        </form>
+    </div>
+</body>
+</html>
