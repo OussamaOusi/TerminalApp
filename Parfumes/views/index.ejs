@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parfum Overzicht</title>
     <link rel="stylesheet" href="/styles.css">
-    <!--<script defer src="/script.js"></script>-->
+    <script defer src="/script.js"></script>
 </head>
+
 <body>
     <nav>
         <ul>
             <li><a href="/">Home</a></li>
         </ul>
     </nav>
-    
-    <input type="text" id="filterInput" placeholder="Filter op naam">
+
+    <form action="">
+        <section class="input-group mb-3 mt-3">
+        <input type="text" id="filterInput" placeholder="Zoeken">
+    </section>
+    </form>
 
     <table id="fragrancesTable">
         <thead>
@@ -32,17 +38,32 @@
             </tr>
         </thead>
         <tbody>
-            <% fragrances.forEach(fragrance => { %>
+            <% fragrances.forEach(fragrance=> { %>
                 <tr>
-                    <td><%= fragrance.id %></td>
-                    <td><%= fragrance.name %></td>
-                    <td><%= fragrance.description %></td>
-                    <td><%= fragrance.age %></td>
-                    <td><%= fragrance.releasedate %></td>
-                    <td><%= fragrance.category %></td>
-                    <td><%= fragrance.price %></td>
-                    <td><%= fragrance.season.join(', ') %></td>
-                    <td><a href="/detail/<%= fragrance.id %>">Details</a></td>
+                    <td>
+                        <%= fragrance.id %>
+                    </td>
+                    <td>
+                        <%= fragrance.name %>
+                    </td>
+                    <td>
+                        <%= fragrance.description %>
+                    </td>
+                    <td>
+                        <%= fragrance.age %>
+                    </td>
+                    <td>
+                        <%= fragrance.releasedate %>
+                    </td>
+                    <td>
+                        <%= fragrance.category %>
+                    </td>
+                    <td>
+                        <%= fragrance.price %>
+                    </td>
+                    <td>
+                        <%= fragrance.season.join(', ') %></td>
+                    <td><a href="/detail/<%= fragrance._id %>">Details</a></td>
                     <td><a href="/edit/<%= fragrance._id %>">Edit</a></td>
                 </tr>
             <% }) %>

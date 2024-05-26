@@ -1,52 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfume Detail</title>
-    <link rel="stylesheet" href="../styles.css">
+    <title><%= fragrance.name %> - Details</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script defer src="/Parfumes/public/script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Center all text */
+        }
+        .title {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center; /* Horizontally center the content */
+            margin-bottom: 20px;
+        }
+        .image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .description {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .info {
+            text-align: center; /* Center all text within the info paragraph */
+            margin-bottom: 20px;
+        }
+        .info p {
+            margin: 5px 0;
+        }
+        .note {
+            font-weight: bold;
+            color: #007bff;
+        }
+        .back-link {
+            display: inline-block;
+            color: #007bff;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-        </ul>
-    </nav>
-
-    <div id="perfumeDetail">
-        <h2>Perfume Detail</h2>
-        <div id="perfumeInfo">
+    <div class="container">
+        <h1 class="title"><%= fragrance.name %></h1>
+        <div class="image-container">
+            <img src="<%= fragrance.profile_image_url %>" alt="<%= fragrance.name %>" class="image" style="max-width: 300px;">
         </div>
+        <p class="description"><%= fragrance.description %></p>
+        <p class="info"><span class="note">Category:</span> <%= fragrance.category %></p>
+        <p class="info"><span class="note">Price:</span> $<%= fragrance.price.toFixed(2) %></p>
+        <p class="info"><span class="note">Season:</span> <%= fragrance.season.join(", ") %></p>
+        <% if (fragrance.releasedate) { %>
+            <p class="info"><span class="note">Release Date:</span> <%= fragrance.releasedate.toDateString() %></p>
+        <% } else { %>
+            <p class="info"><span class="note">Release Date:</span> Not available</p>
+        <% } %>
+        <h2 class="title">Notes</h2>
+        <% if (fragrance.details && fragrance.details.notes) { %>
+            <p class="info"><span class="note">Top Notes:</span> <%= fragrance.details.notes.top_notes.join(", ") %></p>
+            <p class="info"><span class="note">Middle Notes:</span> <%= fragrance.details.notes.middle_notes.join(", ") %></p>
+            <p class="info"><span class="note">Base Notes:</span> <%= fragrance.details.notes.base_notes.join(", ") %></p>
+        <% } else { %>
+            <p class="info">No notes available</p>
+        <% } %>
+        <a href="/" class="back-link">Back to Fragrances</a>
     </div>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const params = new URLSearchParams(window.location.search);
-            const perfumeId = params.get('id');
-
-            const perfume = fragrances.find(fragrance => fragrance.id.toString() === perfumeId);
-
-            if (perfume) {
-                const perfumeInfo = document.getElementById('perfumeInfo');
-                perfumeInfo.innerHTML = `
-            <img src="${perfume.profile_image_url}" alt="${perfume.name}">
-            <p><strong>Name:</strong> ${perfume.name}</p>
-            <p><strong>Description:</strong> ${perfume.description}</p>
-            <p><strong>Age:</strong> ${perfume.age}</p>
-            <p><strong>Release Date:</strong> ${perfume.releasedate}</p>
-            <p><strong>Category:</strong> ${perfume.category}</p>
-            <p><strong>Price:</strong> ${perfume.price}</p>
-            <p><strong>Season:</strong> ${perfume.season.join(', ')}</p>
-        `;
-            } else {
-                const perfumeInfo = document.getElementById('perfumeInfo');
-                perfumeInfo.innerHTML = `<p>Perfume not found.</p>`;
-            }
-        });
-
-    </script>
 </body>
-
 </html>
