@@ -81,6 +81,7 @@
             <p class="info"><span class="note">Release Date:</span> Not available</p>
         <% } %>
         <h2 class="title">Notes</h2>
+        
         <% if (fragrance.details && fragrance.details.notes) { %>
             <p class="info"><span class="note">Top Notes:</span> <%= fragrance.details.notes.top_notes.join(", ") %></p>
             <p class="info"><span class="note">Middle Notes:</span> <%= fragrance.details.notes.middle_notes.join(", ") %></p>

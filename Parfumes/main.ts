@@ -128,7 +128,7 @@ app.post("/edit/:id", async (req, res) => {
       { $set: { description, category, price: parseFloat(price), season: season.split(",") } }
     );
 
-    if (updateResult.modifiedCount === 1) {
+    if (updateResult.modifiedCount >= 1) {
       res.redirect("/");
     } else {
       res.status(404).send("Fragrance not found");

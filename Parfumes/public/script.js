@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const rows = table.querySelectorAll("tbody tr");
 
         rows.forEach(row => {
-            const cellText = row.cells[1].textContent.toLowerCase();
+            const cellText = row.cells[0].textContent.toLowerCase();
             if (cellText.includes(filterValue)) {
                 row.style.display = "";
             } else {

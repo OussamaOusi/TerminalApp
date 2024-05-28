@@ -25,14 +25,11 @@
     <table id="fragrancesTable">
         <thead>
             <tr>
-                <th id="sortById">ID</th>
                 <th id="sortByName">Naam</th>
-                <th>Omschrijving</th>
                 <th id="sortAge">Leeftijd</th>
                 <th id="releasedate">Releasedatum</th>
                 <th id="category">Categorie</th>
                 <th id="price">Prijs</th>
-                <th id="sortBySes">Seizoen</th>
                 <th>Details</th>
                 <th>Edit</th>
             </tr>
@@ -41,13 +38,7 @@
             <% fragrances.forEach(fragrance=> { %>
                 <tr>
                     <td>
-                        <%= fragrance.id %>
-                    </td>
-                    <td>
                         <%= fragrance.name %>
-                    </td>
-                    <td>
-                        <%= fragrance.description %>
                     </td>
                     <td>
                         <%= fragrance.age %>
@@ -61,8 +52,6 @@
                     <td>
                         <%= fragrance.price %>
                     </td>
-                    <td>
-                        <%= fragrance.season.join(', ') %></td>
                     <td><a href="/detail/<%= fragrance._id %>">Details</a></td>
                     <td><a href="/edit/<%= fragrance._id %>">Edit</a></td>
                 </tr>
